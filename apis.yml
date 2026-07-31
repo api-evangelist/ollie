@@ -1,7 +1,27 @@
 aid: ollie
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ollie.png
 name: Ollie
-description: Ollie is a company surfaced as a portfolio company of canaan-partners and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Ollie (ollie.com, formerly myollie.com) is a direct-to-consumer pet health
+  company that makes fresh, human-grade dog food tailored to each dog. Customers
+  build a personalized meal plan from their dog's profile (breed, age, weight,
+  activity, allergies), and Ollie delivers pre-portioned, chef-and-vet-developed
+  recipes on a recurring subscription, along with app-based health tracking and
+  check-ins. The company reports having served more than one million dogs. Ollie
+  is a venture-backed consumer brand and a portfolio company of Canaan Partners;
+  it operates as a subscription e-commerce and mobile-app business and does not
+  publish a public developer platform, API, or developer documentation.
 url: https://raw.githubusercontent.com/api-evangelist/ollie/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +31,39 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Pets
+- Pet Food
+- Dog Food
+- Direct to Consumer
+- Subscription
+- E-commerce
+- Consumer Health
 apis: []
+common:
+- type: DomainSecurity
+  url: security/ollie-domain-security.yml
+- type: Website
+  url: https://www.ollie.com/
+- type: Blog
+  url: https://blog.ollie.com/
+- type: SignUp
+  url: https://www.ollie.com/onboarding/
+- type: Support
+  url: https://www.ollie.com/faqs/
+- type: TermsOfService
+  url: https://www.ollie.com/terms/
+- type: PrivacyPolicy
+  url: https://www.ollie.com/privacy-policy/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
